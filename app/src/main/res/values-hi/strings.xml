@@ -1,0 +1,288 @@
+<resources>
+    <string name="app_name">मेरी नियमित यादें</string>
+    <string name="action_settings">सेटिंग्स</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_activity_action_bar_compat_styled">ActionBarCompatStyled</string>
+    <string name="actionBarCompatMain_description">Items</string>
+
+    <string name="choose_pulse_message">
+        <![CDATA[
+            नीचे दिये गये विषय में से चुने
+        ]]>
+    </string>
+
+    <string name="choose_associate_message">
+        <![CDATA[
+            नीचे दिये गये केंद् में से चुने
+        ]]>
+    </string>
+
+    <string name="add_associate_note">
+        <![CDATA[
+                 नोट: नीचे आप नया केंद् बना सकते है या
+                  पुर्वनिर्मित विषय या केंद्र में से चुने
+        ]]>
+    </string>
+
+    <string name="add_pulse">नया विषय बनायें</string>
+    <string name="edit_pulse">संपादित विषय</string>
+    <string name="view_pulse">विषय विषतार में देखें</string>
+    <string name="update_pulse">Update Item</string>
+
+
+    <string name="pulseCreatedLabel">विषय बन गया है</string>
+    <string name="salary">Pulse Salary</string>
+    <string name="PulseUpdateLabel">Update</string>
+    <string name="add">Add Now</string>
+    <string name="edit">Edit Complete</string>
+
+
+    <string name="reset">बदलाव हटाएँ</string>
+    <string name="cancel">Cancel</string>
+
+
+    <string name="add_allied">नया केंद्र बनायें</string>
+    <string name="edit_allied">संपादित केंद्</string>
+    <string name="view_allied">केंद्  विषतार में देखें</string>
+    <string name="sliding_items_allied">एक केंद्र से जुड़े सभी विषय देखें</string>
+    <string name="update_allied">Update Associate</string>
+
+    <string name="alliedCreatedLabel">Associate Created</string>
+
+    <!--list_cntext_menu-->
+    <string name="menuClose">बंद करो</string>
+    <string name="menuShare">Share Item</string>
+    <string name="menuEdit">Edit Item</string>
+    <string name="menuDelete">Delete Item</string>
+
+    <string name="done">सम्पन्न</string>
+    <string name="cancal">रद्‍द करो</string>
+
+    <string name="search_hint">विषय खोजे..</string>
+    <string name="search_label">Search Label..</string>
+
+
+    <!--layout-sw320dp/fragment_pulse_list_item.xml-->
+    <string name="date_format">MMM dd,  hh:mm a</string>
+
+    <string name="pulse_name_hint">इस विषय को नाम दें</string>
+    <string name="associate_name_hint">इस केंद को नाम दें</string>
+    <string name="pulse_desc_hint">विषय विषतार में यहाँ आयेगा..</string>
+    <string name="associate_desc_hint"></string>
+    <string name="pulse_dependent_count_text">यह केंद्र नही है</string>
+    <string name="pulse_dependent_count_text_exist">आश्रित :</string>
+    <string name="associate_dependent_count_text">कोई आश्रित नही है</string>
+    <string name="associate_dependent_count__exist">: आश्रित</string>
+    <string name="date_time_text">the date time</string>
+
+    <!--layout-sw320dp/fragment_allied_list_item.xml-->
+    <!--<string name="associate_name_hint">Give a name</string>
+    <string name="associate_desc_hint"></string>
+    <string name="associate_dependent_count_text"></string>-->
+
+    <!--layout-sw320dp/activity_add_pulse.xml-->
+    <string name="pulseAddDone">सम्पन्न</string>
+    <string name="pulseAddReset">बदलाव हटाएँ</string>
+    <string name="pulseNameLabel">विषय का नाम:</string>
+    <string name="pulseNameHint">विषय का नाम यहाँ आयेगा..</string>
+    <string name="pulseDescLabel">विषय विषतार में लिखे:</string>
+    <string name="pulseDescHint">विषय विषतार में यहाँ आयेगा..</string>
+    <string name="addPulseImage">विषय कि फोटो लगाएे</string>
+
+    <string name="alliedNameLabel">केंद् का नाम:</string>
+    <string name="alliedNameHint">केंद् का नाम यहाँ आयेगा..</string>
+    <string name="alliedDescLabel">केंद् विषतार में लिखे:</string>
+    <string name="alliedDescHint">केंद् विषतार में यहाँ आयेगा..</string>
+    <string name="choseAllied">पुर्वनिर्मित केंद् में से चुने</string>
+    <string name="chosePulseAsAllied">पुर्वनिर्मित विषय में से चुने और वह इस विषय का केंद् बन जाएगा</string>
+    <string name="addAssociateImage">केंद् कि फोटो लगाएे</string>
+
+    <!--layout-sw320dp/activity_add_allied.xml-->
+    <string name="rootAddDone">सम्पन्न</string>
+    <string name="rootAddReset">बदलाव हटाएँ</string>
+
+
+    <string name="pulseEditDone">सम्पन्</string>
+    <string name="pulseEditReset">बदलाव हटाएँ</string>
+
+    <string name="editPulseImage">संपादित विषय फ़ोटो</string>
+    <string name="editAssociateImage">संपादित केंद् फ़ोटो</string>
+
+    <!--layout/allied_slidingtab_pager_item.xml-->
+    <string name="editPulse">संपादित</string>
+    <string name="pulseShowDetail">विस्तार में देखो</string>
+    <string name="deletePulse">विषय हटा दो</string>
+    <string name="editRoot">संपादित</string>
+    <string name="editRootDone">सम्पन्</string>
+    <string name="rootEditReset">बदलाव हटाएँ</string>
+    <string name="rootShowDetail">विस्तार में देखो</string>
+    <string name="deleteRoot">केंद् हटा दो</string>
+    <!--No Item found-->
+    <string name="itemsNotExist">कोई विषय नही मिला</string>
+    <string name="rootNotExist">कोई केंद् नही मिला</string>
+
+
+    <!--layout-sw320dp/activity_main.xml-->
+    <string name="createItemLabel">विषय बनाओ</string>
+    <string name="showAllRoots">सभी केंद्र देखो</string>
+    <string name="createRootLabel">केंद्र बनाओ</string>
+
+
+    <string name="addDependent">नया विषय जोड़े</string>
+    <string name="editRootSlidingTab">केंद्र संपादित</string>
+    <string name="externalDirectoryDatabasePath">MRM/Backup/Database</string>
+    <string name="externalDirectoryPicsPath">MRM/Backup/Pictures</string>
+    <string name="imageFileTimeStamp">yyyyMMdd_HHmmssSS</string>
+    <string name="nextPage"><![CDATA[आगे >>]]></string>
+    <string name="previousPage"><![CDATA[<< पिछला]]></string>
+    <string name="page">पृष्ठ</string>
+    <string name="of">कुल पृष्ठ</string>
+    <string name="searchAssociateName">केंद्र खोजे..</string>
+    <string name="backupMyData">मेरे डेटा का बैकअप बनाओ</string>
+    <string name="restoreMyData">बैकअप डेटा बहाल करो</string>
+    <string name="delete_confirm_title">हटा दो</string>
+    <string name="delete_confirm_message">हटा दो ?</string>
+    <string name="delete_impossible_dependent_exist">यह हटाया नही जा सकता, इस पर आश्रित विषय भी हैं|इसके विषय को किसी और केंद् पर स्थानांतरित करें |</string>
+    <string name="delete_item_confirm_message">यह विषय हट जाएगा, परंतु केंद् ऐसे ही रहेगा</string>
+    <string name="doNotSave">यह याद न रखें</string>
+    <string name="externalDirectoryParentPath">MRM/Backup</string>
+    <string name="backupTitle">बैकअप</string>
+    <string name="goToBackupFolder">बैकअप फोल्डर या स्थान पर जायें</string>
+    <string name="ignoreChanges">बदलाव हटाएँ</string>
+    <string name="openFolderText">फोल्डर के अंदर देखें</string>
+    <string name="pleaseConfirm">दोबारा बतायें ?</string>
+    <string name="pref_about_profile">बारे में</string>
+    <string name="pref_autoSave_name">अपने आप याद रखें</string>
+    <string name="pref_autoSave_summary">अगर आप इसे चुनते हैं तो आपको सम्पन् दबाने की ज़रूरत नही है, सब कुछ अपने आप याद रहेगा</string>
+    <string name="pref_general_profile">सामूहिक</string>
+    <string name="restoreTitle">बैकअप बहाल करो</string>
+    <string name="search">खोजे</string>
+    <string name="save">यह याद रखें</string>
+    <string name="settings">सेटिंग</string>
+    <string name="showBackUpPath">बैकअप</string>
+    <string name="startBackup">बैकअप शुरू करो</string>
+    <string name="startRestore">बैकअप बहाल करना शुरू करो</string>
+    <string name="summaryAbout">सारांश</string>
+    <string name="titleAbout">बारे में </string>
+    <string name="title_backup_preference">बैकअप</string>
+    <string name="title_restore_preference">बैकअप बहाल करो</string>
+    <string name="itemsPerPage">एक पृष्ठ पर कितने विषय दिखेंगे (पहले स्क्रीन पर , तथा सभी केंद्र देखो वाले स्क्रीन पर)</string>
+    <string name="itemsPerPageDependentScreen">एक पृष्ठ पर कितने विषय दिखेंगे (एक केंद्र से जुड़े सभी विषय देखें वाले स्क्रीन पर)</string>
+    <string name="itemsPerPageDependentScreenSummary">यहाँ आप यह चुन सकते हैं की \'एक केंद्र से जुड़े सभी विषय देखें\' वाले स्क्रीन पर एक साथ कितने विषय दिखेंगे </string>
+    <string name="itemsPerPageSummary">यहाँ आप यह चुन सकते हैं की पहले स्क्रीन पर , तथा सभी केंद्र देखो वाले स्क्रीन पर एक साथ कितने विषय दिखेंगे</string>
+    <string name="summary_backup_preference"><![CDATA[आपने जो भी काम किया है उसका बैकअप ले सकते हैं चाहे वह फोटो हो या आपके द्वारा कुछ लिखा गया हो, आप बैकअप के स्थान या फोल्डर पर आसानी से पहुँच सकते है,
+पहले  मुख्य स्क्रीन पर सबसे उपर मेनू पर पहुचे  ->
+और \'बैकअप फोल्डर या स्थान पर जायें \']]></string>
+    <string name="summary_restore_preference">बैकअप बहाल वहीं से होगा जहाँ पर बैकअप बनाया गया था </string>
+    <string name="summaryBackUpPath">बैकअप फोल्डर </string>
+    <string name="backupErr">बैकअप के लिए जगह नही बना पा रहे है </string>
+    <string name="backupNRestore"><![CDATA[बैकअप & बैकअप बहाल ]]></string>
+    <string name="pref_add_pulse_screen_summary_Title_3">अपने आप याद रहेगा</string>
+    <string name="pref_about">बारे में</string>
+    <string name="pref_edit_pulse_screen_summary_title_2">हटा दो</string>
+    <string name="pref_edit_pulse_screen_summary_title_1">स्क्रीन का उद्देश्य</string>
+    <string name="pref_main_screen">मुख्य स्क्रीन</string>
+    <string name="pref_add_pulse_screen_summary_Title_1">स्क्रीन का उद्देश्य</string>
+    <string name="pref_add_pulse_screen_summary_Title_2">केंद्र बनाने के तरीके</string>
+    <string name="pref_main_screen_summary_Title_1">2 फोटो साथ - साथ</string>
+    <string name="pref_main_screen_summary_Title_2">नीला रंग की पृष्ठभूमि</string>
+    <string name="pref_main_screen_summary_Title_3">खोजे</string>
+    <string name="pref_main_screen_summary_Title_4">आश्रित</string>
+    <string name="pref_main_screen_summary_Title_5">एक पृष्ठ पर विषय की संख्या</string>
+    <string name="pref_main_screen_summary_Title_6">हटाना</string>
+    <string name="pref_main_screen_summary_1">यह स्क्रीन: 2 फोटो साथ - साथ दर्शाता है, एक विषय है और दूसरा उसका केंद्र</string>
+    <string name="pref_main_screen_summary_2">विषय नीला रंग की पृष्ठभूमि पर आता है</string>
+    <string name="pref_main_screen_summary_3">विषय को उसके नाम से या विवरण से खोजे</string>
+    <string name="pref_main_screen_summary_4">आश्रित,से आप आश्रित स्क्रीन पर पहुँच जाएँगे</string>
+    <string name="pref_main_screen_summary_5"><![CDATA[एक पृष्ठ पर विषय की संख्या बढ़ाने के लिए, मेन्यू -> सेटिंग्स -> एक पृष्ठ पर कितने विषय दिखेंगे (पहले स्क्रीन पर , तथा सभी केंद्र देखो वाले स्क्रीन पर)]]></string>
+    <string name="pref_main_screen_summary_6">विषय हटानेके लिए नीला रंग की पृष्ठभूमि पर क्लिक करें या फिर संपादित विषय स्क्रीन पर पहुँचे</string>
+    <string name="pref_edit_pulse_screen">संपादित विषय और उसका केंद्र</string>
+    <string name="pref_edit_pulse_screen_summary_1">संपादित विषय और उसका केंद्र</string>
+    <string name="pref_edit_pulse_screen_summary_2">विषय हटा सकते है पर केंद्र यहाँ से नही हटेगा</string>
+    <string name="pref_add_item_screen">नया विषय बनाये </string>
+    <string name="pref_add_pulse_screen_summary_1">नया विषय तथा केंद्र बनाये</string>
+    <string name="pref_add_pulse_screen_summary_2">केंद्र बनाने के लिए नीचे दिये गये 3 में से 1 चुने:\n\n
+i. पुर्वनिर्मित केंद् में से चुने, या \n\n
+ii. नया विषय बनाये, या \n\n
+iii.पुर्वनिर्मित विषय में से चुने और वह इस विषय का केंद् बन जाएगा</string>
+    <string name="pref_add_pulse_screen_summary_3"><![CDATA[आपके सारे बदलाव अपने आप याद रहते हैं, इसे हटाने के लिए\n\n मुख्य स्क्रीन -> सेटिंग्स -> अपने आप याद रखें ]]></string>
+    <string name="changesSaved">बदलाव सम्पन्न</string>
+    <string name="pref_add_allied_screen_summary_1">नया केंद्र बनाये</string>
+    <string name="pref_add_allied_screen_summary_2">(ऐच्छिक) कृपया फोटो, नाम और विवरण बतायें</string>
+    <string name="pref_add_allied_screen_summary_title_1">स्क्रीन का उद्देश्य</string>
+    <string name="pref_add_allied_screen_summary_title_2">नया केंद्र बनाये</string>
+    <string name="pref_add_root_screen">नया केंद्र बनाये</string>
+    <string name="pref_allied_list_screen">केंद्र सूची</string>
+    <string name="pref_allied_list_screen_summary_1">यह स्क्रीन सभी केंद्र एक सूची में दिखाता हैं</string>
+    <string name="pref_allied_list_screen_summary_3">केंद्र की पहचान पीली पृष्ठभूमि से कि जा सकती है</string>
+    <string name="pref_allied_list_screen_summary_4">केंद्र अपने नाम और विवरण से खोजा जा सकता हैं  </string>
+    <string name="pref_allied_list_screen_summary_5">आश्रित: आश्रित से आश्रित स्क्रीन पर जाते हैं, वहाँ केंद्र के सभी आश्रित देखे जा सकते हैं</string>
+    <string name="pref_allied_list_screen_summary_6"><![CDATA[एक पृष्ठ पर केंद्र की संख्या बढ़ाने के लिए, पहले मुख्य स्क्रीन पर जायें:: \n\n मेनू -> सेट्टिंग्स -> एक पृष्ठ पर कितने विषय दिखेंगे (पहले स्क्रीन पर , तथा सभी केंद्र देखो वाले स्क्रीन पर)]]></string>
+    <string name="pref_allied_list_screen_summary_7"><![CDATA[केंद्र हटाने के लिये पीली पृष्ठभूमि क्लिक करे फिर केंद्र हटाये या संपादित केंद्र -> मेनू पर जायें]]></string>
+    <string name="pref_allied_list_screen_summary_title_1">स्क्रीन का उद्देश्य</string>
+    <string name="pref_allied_list_screen_summary_title_3">पीली पृष्ठभूमि</string>
+    <string name="pref_allied_list_screen_summary_title_4">खोजे</string>
+    <string name="pref_allied_list_screen_summary_title_5">आश्रित</string>
+    <string name="pref_allied_list_screen_summary_title_6">पृष्ठ पर केंद्र की संख्या</string>
+    <string name="pref_edit_allied_screen_summary_title_2">हटा दो</string>
+    <string name="pref_allied_list_screen_summary_title_7">हटा दो</string>
+    <string name="pref_dependent_screen_summary_title_6">पृष्ठ पर केंद्र की संख्या</string>
+    <string name="pref_edit_allied_screen_summary_title_1">स्क्रीन उद्देश्य</string>
+    <string name="pref_edit_allied_screen_summary_2">केंद्र हटा दो</string>
+    <string name="pref_edit_allied_screen_summary_1">संपादित केंद्र</string>
+    <string name="pref_dependent_screen_summary_title_5">आश्रित विषय हटा दो</string>
+    <string name="pref_dependent_screen_summary_title_3">संपादित आश्रित विषय </string>
+    <string name="pref_dependent_screen_summary_title_2">आश्रित विषय बनाये</string>
+    <string name="pref_dependent_screen_summary_6"><![CDATA[एक पृष्ठ पर आश्रित विषय की संख्या बढ़ाने के लिए, पहले मुख्य स्क्रीन पर जायें:: \n\n मेनू -> सेट्टिंग्स -> एक पृष्ठ पर कितने विषय दिखेंगे (एक केंद्र से जुड़े सभी विषय देखें वाले स्क्रीन पर)]]></string>
+    <string name="pref_edit_root_screen">संपादित केंद्र स्क्रीन </string>
+    <string name="pref_dependent_screen_summary_title_1">स्क्रीन उद्देश्य</string>
+    <string name="pref_dependent_screen">एक केंद्र और उस पर आश्रित विषय</string>
+    <string name="pref_dependent_screen_summary_1">केंद्र ऊपर और उस पर आश्रित विषय नीचे दिखते हैं</string>
+    <string name="pref_dependent_screen_summary_2"><![CDATA[पृष्ठ पर मेनू -> आश्रित विषय बनाये ]]></string>
+    <string name="pref_dependent_screen_summary_3">स्क्रीन के नीचे जायें और संपादित विषय पर क्लिक करें</string>
+    <string name="pref_dependent_screen_summary_4">आश्रित विषय लेफ्ट-से-राइट सूची में दिखते हैं</string>
+    <string name="pref_dependent_screen_summary_5">स्क्रीन के नीचे जायें और संपादित विषय या विवरण पर क्लिक करें और फिर हटा दो क्लिक करें </string>
+    <string name="pref_dependent_screen_summary_title_4">आश्रित विषय लेफ्ट-से-राइट सूची में हैं</string>
+    <string name="saveConfirmMessage"><![CDATA[इस विषय को याद रखें? \n\n नोट: चुने मेन्यू -> सेटिंग्स -> \'अपने आप याद रहेगा\' ]]></string>
+    <string name="saveConfirmMessageAllied"><![CDATA[इस केंद् को याद रखें? \n\n नोट: चुने मेन्यू -> सेटिंग्स -> \'अपने आप याद रहेगा\' ]]></string>
+    <string name="saveConfirmTitle">यह याद रखो</string>
+    <string name="selectOption">विकल्प चुने</string>
+    <string name="selectPicture">फोटो चुने</string>
+    <string name="takeFromCamera">कॅमरा से फोटो खीचे</string>
+    <string name="pref_about_name">\'मेरी नियमित यादें\' के बारे में</string>
+    <string name="about_main_screen">इस स्क्रीन के बारे में</string>
+    <string name="backupNotdone">बैकअप नही हुआ</string>
+    <string name="restoreNotDone">बैकअप बहाल नही हुआ</string>
+    <string name="pleaseConfirmRestore">बैकअप बहाल करो  \n\n नोट: अभी मौजूद डेटा हट जाएगा</string>
+    <string name="externalDirectoryCameraPicsPath">MRM/Camera/Pictures</string>
+    <string name="externalDirectoryDatabasePathTemp">MRM/Backup_Temp/Database</string>
+    <string name="externalDirectoryParentBackup">MRM</string>
+    <string name="externalDirectoryParentPathTemp">MRM/Backup_Temp</string>
+    <string name="externalDirectoryPicsPathTemp">MRM/Backup_Temp/Pictures</string>
+    <string name="backupTempFolderErr">Backup_Temp नही बना पा रहे हैं</string>
+    <string name="dependentPerPage">आश्रित संख्या प्रति पृष्ठ </string>
+    <string name="finalizeTitle">अंतिम रूप तय्यार हो रहा है</string>
+    <string name="itemsPerPageMainScreen">मुख्य स्क्रीन, सभी केंद्र देखें स्क्रीन</string>
+    <string name="pref_main_screen_summary_Title_7">बैकअप</string>
+    <string name="pref_main_screen_summary_Title_8">बैकअप बहाल </string>
+    <string name="startFinalizing">अंतिम रूप देना शुरू </string>
+
+    <string name="externalDirectoryPath_appFolderName">MRM</string>
+    <string name="externalDirectoryPath__Backup_Temp">Backup_Temp</string>
+    <string name="externalDirectoryPath_Backup">Backup</string>
+    <string name="externalDirectoryPath_Pictures">Pictures</string>
+    <string name="externalDirectoryPath_Database">csv</string>
+    <string name="externalDirectoryPath_CSV">csv</string>
+    <string name="externalDirectoryPath_Camera">Camera</string>
+    <string name="pref_main_screen_summary_7"><![CDATA[अपने डेटा [जैसे फोटो, उसका नाम,उसका विवरण जो इस app से बनाया गया है] सभी का बैकअप लिया जा सकता है \n\n
+बैकअप पर पहुँचने े के लिए पहले मुख्य स्क्रीने के  मेन्यू पर पहुँचे  ->  बैकअप फोल्डर या स्थान पर जायें \n
+जब नया बैकअप बनता है तो पुराने  के साथ  दिनांक और समय जुड़ जाएगा  ]]></string>
+    <string name="pref_main_screen_summary_8" translatable="false"><![CDATA[नोट:बैकअप बहाल करने पर मौजूदा डेटा हट जाएगा और उसके स्थान पर बैकअप बहाल हो जाएगा\n\n
+बैकअप बहाल करने के लिए बैकअप [\"Backup\"] फोल्डरकोapp के  फोल्डर में रखें\n
+app के  फोल्डर पर पहुँचने े के लिए पहले मुख्य स्क्रीन  के  मेन्यू पर पहुँचे  ->  बैकअप फोल्डर या स्थान पर जायें \n
+
+ ]]></string>
+
+
+</resources>

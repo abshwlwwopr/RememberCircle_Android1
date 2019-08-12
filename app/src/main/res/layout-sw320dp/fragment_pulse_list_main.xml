@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_divider_color"
+    android:layout_margin="0dp"
+    android:padding="0dp"> <!-- background outside cards -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/pagesNavigate">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/pageNum"
+        android:text="Page : 1"
+        android:singleLine="true"
+        android:textStyle="italic"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_alignBaseline="@+id/btn_next_page"
+        />
+
+    <Button
+        android:id="@+id/btn_next_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignParentTop="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:textAlignment="center"
+        android:textStyle="normal"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/pageNum"
+        android:text="@string/nextPage"
+        android:layout_alignParentRight="true"
+
+        />
+
+    <Button
+        android:id="@+id/btn_prev_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:background="?android:attr/selectableItemBackground"
+        android:textAlignment="center"
+        android:textStyle="normal"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@+id/pageNum"
+        android:layout_alignParentLeft="true"
+        android:text="@string/previousPage"
+        />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/list_pulse_main"
+        android:layout_below="@+id/pagesNavigate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="false"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        android:scrollbarStyle="outsideOverlay"
+
+        android:dividerHeight="-1dp"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:headerDividersEnabled="false"
+        android:footerDividersEnabled="false"
+
+
+        android:focusable="true"
+        android:fadeScrollbars="true"
+
+
+        />
+
+
+
+    <!-- <ListView
+            android:id="@+id/list_pulse_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent"
+            android:dividerHeight="10dp"
+            android:drawSelectorOnTop="true"
+            android:footerDividersEnabled="false"
+            android:padding="10dp"
+            android:scrollbarStyle="outsideOverlay"
+
+
+
+            />-->
+
+
+</RelativeLayout>

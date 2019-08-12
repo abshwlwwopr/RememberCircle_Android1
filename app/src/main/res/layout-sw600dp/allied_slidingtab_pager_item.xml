@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.SampleMessageTile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingTop="0dp">
+
+<RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:gravity="center"
+      android:background="@drawable/pulse_gradient_selecteor"
+    android:id="@+id/layout_sliding_item"
+    >
+
+    <!--<TextView
+          android:id="@+id/item_subtitle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textAppearance="?android:attr/textAppearanceLarge"
+          android:text="Page:"/>
+
+    <TextView
+          android:id="@+id/item_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="80sp" />
+-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:paddingTop="0dp"
+        android:id="@+id/pulse_layout_item"
+        >
+
+      <TextView
+            android:id="@+id/updatedDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:maxLines="1"
+            android:visibility="visible"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="2dp"
+            />
+
+
+      <TextView
+          android:id="@+id/etxt_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:hint="@string/pulse_name_hint"
+          android:nextFocusDown="@+id/etxt_pulse_desc"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:layout_below="@+id/updatedDate"
+          />
+
+      <TextView
+          android:id="@+id/etxt_pulse_desc"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/etxt_name"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:layout_margin="5dp"/>
+
+      <ImageView
+          android:id="@+id/pulseImg"
+          android:layout_width="match_parent"
+          android:layout_height="500dp"
+          android:layout_gravity="center"
+          android:layout_below="@+id/etxt_pulse_desc"
+          android:background="@drawable/pulse_gradient_selecteor"/>
+
+      <TextView
+          android:id="@+id/pulseContentId"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:layout_below="@+id/alliedImg"
+          android:inputType="numberDecimal"
+          android:visibility="gone"
+          android:singleLine="true"
+          android:text="-1"
+          />
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/topCreateBtns"
+        android:layout_marginTop="3dp"
+        android:paddingTop="0dp"
+        android:layout_below="@+id/pulse_layout_item"
+        android:layout_alignParentBottom="true"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="?android:attr/dividerVertical"
+            android:layout_alignParentTop="true"/>
+        <View
+            android:id="@+id/ViewColorPickerHelper"
+            android:layout_width="1dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:background="?android:attr/dividerVertical"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/btn_edit_pulse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:layout_toLeftOf="@id/ViewColorPickerHelper"
+            android:text="@string/editPulse"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:drawableLeft="@android:drawable/ic_menu_edit"/>
+        <Button
+            android:id="@+id/btn_view_pulse_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:text="@string/pulseShowDetail"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_toRightOf="@id/ViewColorPickerHelper"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+    </ScrollView>

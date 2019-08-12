@@ -1,0 +1,459 @@
+<resources>
+    <string name="app_name">Mi Remember Miscellaneous</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_activity_action_bar_compat_styled">ActionBarCompatStyled</string>
+    <string name="actionBarCompatMain_description">Items</string>
+
+    <string name="choose_pulse_message">
+        <![CDATA[
+            Choose one from the below list of Items.
+        ]]>
+    </string>
+
+    <string name="choose_associate_message">
+        <![CDATA[
+            Choose one from the below list of Roots.
+        ]]>
+    </string>
+
+
+
+    <string name="add_associate_note">
+        <![CDATA[
+            Note: From below, new Root can be created, or
+                  choose from existing Roots/Items.
+        ]]>
+    </string>
+
+    <string name="add_pulse">Add Item</string>
+    <string name="edit_pulse">Edit Item</string>
+    <string name="view_pulse">View Item</string>
+    <string name="update_pulse">Update Item</string>
+
+
+    <string name="pulseCreatedLabel">Item Created</string>
+    <string name="salary">Pulse Salary</string>
+    <string name="PulseUpdateLabel">Update</string>
+    <string name="add">Add Now</string>
+    <string name="edit">Edit Complete</string>
+
+
+    <string name="reset">Reset</string>
+    <string name="cancel">Cancel</string>
+
+
+    <string name="add_allied">Add Root</string>
+    <string name="edit_allied">Edit Root</string>
+    <string name="view_allied">View Root</string>
+    <string name="sliding_items_allied">One Root with Dependents</string>
+    <string name="update_allied">Update Root</string>
+
+    <string name="alliedCreatedLabel">Root Created</string>
+
+    <!--list_cntext_menu-->
+    <string name="menuClose">Close</string>
+    <string name="menuShare">Share Item</string>
+    <string name="menuEdit">Edit Item</string>
+    <string name="menuDelete">Delete Item</string>
+
+    <string name="done">Done</string>
+    <string name="cancal">Cancel</string>
+
+    <string name="search_hint">Search Item Name..</string>
+    <string name="search_label">Search Label..</string>
+
+
+    <!--layout-sw320dp/fragment_pulse_list_item.xml-->
+    <string name="date_format">MMM dd,  hh:mm a</string>
+
+    <string name="pulse_name_hint">Give a name to Item</string>
+    <string name="associate_name_hint">Give a name to Root</string>
+    <string name="pulse_desc_hint">Item description will come here..</string>
+    <string name="associate_desc_hint"></string>
+    <string name="pulse_dependent_count_text">Not a Root</string>
+    <string name="pulse_dependent_count_text_exist">Dependent :</string>
+    <string name="associate_dependent_count_text">No dependent exist</string>
+    <string name="associate_dependent_count__exist">: Dependent</string>
+    <string name="date_time_text">the date time</string>
+
+    <!--layout-sw320dp/fragment_allied_list_item.xml-->
+    <!--<string name="associate_name_hint">Give a name</string>
+    <string name="associate_desc_hint"></string>
+    <string name="associate_dependent_count_text"></string>-->
+
+    <!--layout-sw320dp/activity_add_pulse.xml-->
+    <string name="pulseAddDone">Done</string>
+    <string name="pulseAddReset">Reset</string>
+    <string name="pulseNameLabel">Item Name:</string>
+    <string name="pulseNameHint">Item Name will come here..</string>
+    <string name="pulseDescLabel">Item Description:</string>
+    <string name="pulseDescHint">Item Description will come here..</string>
+    <string name="addPulseImage">Add Item Image</string>
+
+    <string name="alliedNameLabel">Root Name:</string>
+    <string name="alliedNameHint">Root Name will come here..</string>
+    <string name="alliedDescLabel">Root Description:</string>
+    <string name="alliedDescHint">Root Description will come here..</string>
+    <string name="choseAllied">Choose from the Root</string>
+    <string name="chosePulseAsAllied">Choose from Item, use it as the Root</string>
+    <string name="addAssociateImage">Add Root Image</string>
+
+    <!--layout-sw320dp/activity_add_allied.xml-->
+    <string name="rootAddDone">Done</string>
+    <string name="rootAddReset">Reset</string>
+
+
+    <string name="pulseEditDone">Done</string>
+    <string name="pulseEditReset">Ignore Changes</string>
+
+    <string name="editPulseImage">Edit Item Image</string>
+    <string name="editAssociateImage">Edit Root Image</string>
+
+    <!--layout/allied_slidingtab_pager_item.xml-->
+    <string name="editPulse">Edit</string>
+    <string name="pulseShowDetail">Show Detail</string>
+    <string name="deletePulse">Delete Item</string>
+    <string name="editRoot">Edit</string>
+    <string name="editRootDone">Done</string>
+    <string name="rootEditReset">Ignore Changes</string>
+    <string name="rootShowDetail">Show Detail</string>
+    <string name="deleteRoot">Delete Root</string>
+    <!--No Item found-->
+    <string name="itemsNotExist">No Item found</string>
+    <string name="rootNotExist">No Root found</string>
+
+
+    <!--layout-sw320dp/activity_main.xml-->
+    <string name="createItemLabel">Create Item</string>
+    <string name="showAllRoots">Show All Roots</string>
+    <string name="createRootLabel">Create Root</string>
+
+
+    <string name="addDependent">Add Dependent Items</string>
+    <string name="editRootSlidingTab">Edit Root</string>
+
+
+    <string name="openFolderText">Open Folder</string>
+
+    <string name="externalDirectoryPath_appFolderName">MRM</string>
+    <string name="externalDirectoryPath__Backup_Temp">Backup_Temp</string>
+    <string name="externalDirectoryPath_Backup">Backup</string>
+    <string name="externalDirectoryPath_Pictures">Pictures</string>
+    <string name="externalDirectoryPath_Database">csv</string>
+    <string name="externalDirectoryPath_CSV">csv</string>
+    <string name="externalDirectoryPath_Camera">Camera</string>
+
+    <string name="externalDirectoryParentPathTemp">MRM/Backup_Temp</string>
+    <string name="externalDirectoryPicsPathTemp">MRM/Backup_Temp/Pictures</string>
+    <string name="externalDirectoryDatabasePathTemp">MRM/Backup_Temp/Database</string>
+    <string name="externalDirectoryParentBackup">MRM</string>
+    <string name="externalDirectoryParentPath">MRM/Backup</string>
+    <string name="externalDirectoryPicsPath">MRM/Backup/Pictures</string>
+    <string name="externalDirectoryCameraPicsPath">MRM/Camera/Pictures</string>
+    <string name="externalDirectoryDatabasePath">MRM/Backup/Database</string>
+
+    <string name="imageFileTimeStamp">yyyyMMdd_HHmmssSS</string>
+
+    <string name="previousPage"><![CDATA[<< Previous]]></string>
+    <string name="nextPage"><![CDATA[Next >>]]></string>
+
+    <string name="page">Page</string>
+    <string name="of">of</string>
+
+    <string name="searchAssociateName">Search Associate Name..</string>
+    <string name="backupMyData">Backup My Data</string>
+    <string name="restoreMyData">Re-Store Data from Backup</string>
+
+    <string name="titleAbout">About</string>
+    <string name="summaryAbout">About Summary</string>
+    <string name="showBackUpPath">Backup</string>
+    <string name="summaryBackUpPath">BackupPath is given below:</string>
+
+    <string name="pref_general_profile">General Settings</string>
+    <string name="pref_autoSave_name">Auto Save</string>
+    <string name="pref_autoSave_summary">The auto save feature (if Selected) will allow to save the data automatically, without pressing the Done button</string>
+
+    <string name="pref_about_profile">About</string>
+    <string name="pref_about_summary">The app is for ...</string>
+
+    <string name="title_backup_preference">Backup</string>
+    <string name="summary_backup_preference">
+        <![CDATA[
+    You can take the backup of your data (pictures, text & everything). The backup folder can be reached from Menu (3 dots at the top)->
+    Go to backup folder.
+    ]]>
+    </string>
+
+    <string name="title_restore_preference">Restore</string>
+    <string name="summary_restore_preference"><![CDATA[
+        Restore data will happen from the same directory/location where the data was placed.
+    ]]></string>
+
+
+    <string name="delete_confirm_title">Delete</string>
+    <string name="delete_confirm_message">Confirm Delete?</string>
+    <string name="delete_impossible_dependent_exist">
+        <![CDATA[ Can\'t delete as dependent items exists. \nShift the dependents to different root and then delet ,
+        then delete this Root.
+        ]]>
+    </string>
+
+    <string name="delete_item_confirm_message">
+        <![CDATA[Item will be deleted, but Root will not be deleted
+    ]]></string>
+
+    <string name="save">Save</string>
+    <string name="doNotSave"><![CDATA[Don\'t Save]]></string>
+
+    <string name="ignoreChanges">Ignore Changes</string>
+
+    <string name="pleaseConfirm">Please Confirm?</string>
+
+    <string name="backupTitle">Backup</string>
+    <string name="startBackup">Start Backup</string>
+
+    <string name="restoreTitle">Restore data back</string>
+    <string name="startRestore">Start Restore</string>
+
+    <string name="settings">Settings</string>
+    <string name="goToBackupFolder">Go to Backup Folder</string>
+    <string name="itemsPerPageMainScreen">Main screen, Show Roots screen</string>
+    <string name="itemsPerPageSummary">Choose the number of items that
+        can be shown on <b>Main screen</b> and <b>Show Roots screen</b>.\n\n
+        Changes will be applicable after the application is re-started..
+    </string>
+
+    <string name="itemsPerPageDependentScreen">One Root Many Dependents screen</string>
+    <string name="itemsPerPageDependentScreenSummary">Choose the number of items that
+        can be shown on <b>One Root Many Dependents screen</b>.\n\n
+        Changes will be applicable after the application is re-started.
+    </string>
+    <string name="backupNRestore"><![CDATA[ Backup & Restore ]]></string>
+    <string name="backupErr"><![CDATA[ Backup location unreachable ]]></string>
+
+    <string name="about_main_screen">About This Screen</string>
+    <string name="pref_main_screen">Main Screen Help</string>
+    <string name="pref_about">About</string>
+    <string name="pref_main_screen_summary_Title_1">2 Pictures Side by Side</string>
+    <string name="pref_main_screen_summary_Title_2">Blue Background</string>
+    <string name="pref_main_screen_summary_Title_3">Search</string>
+    <string name="pref_main_screen_summary_Title_4">Dependent</string>
+    <string name="pref_main_screen_summary_Title_5">Items Per Page</string>
+    <string name="pref_main_screen_summary_Title_6">Delete</string>
+    <string name="pref_main_screen_summary_Title_7">Backup</string>
+    <string name="pref_main_screen_summary_Title_8">Restore</string>
+        <string name="pref_main_screen_summary_1"><![CDATA[ This screen: \n
+      Show\'s 2 pictures side by side one is Item and other is its Root.
+ ]]></string>
+
+    <string name="pref_main_screen_summary_2">
+        <![CDATA[
+      Item can be identified with Blue background color. And its roots (yellow like background) is shown side by side.
+ ]]>
+    </string>
+
+    <string name="pref_main_screen_summary_3">
+        <![CDATA[
+      An Item can be Searched by its name or by its description.
+
+ ]]>
+    </string>
+     <string name="pref_main_screen_summary_4"><![CDATA[
+      Dependent, will take you to the dependent screen which will show all the dependent items.\n\n
+      At that screen user can:\n
+      1). Add Dependent\n\n
+      2). Edit Dependent\n\n
+      3). See Detail\n\n
+ ]]></string>
+    <string name="pref_main_screen_summary_5">
+        <![CDATA[
+      To increase the number of \'Items - Roots\' combination on per page. From first screen:\n\n
+      \'Menu\' -> \'Settings\' ->
+       click [ Choose Items Per Page (Main screen , Show Roots screen)]
+ ]]>
+    </string>
+
+    <string name="pref_main_screen_summary_6"><![CDATA[
+      To delete any item click on blue background and then Delete. Or go to Edit Item
+ ]]></string>
+
+    <string name="pref_main_screen_summary_7"><![CDATA[
+
+    User can take backup of their data [including pictures,name,description] created with this app.\n\n
+    User can reach to backup location from Main Screen Menu -> Go to Back-up folder.\n\n
+    Everytime new backup is created, old backup is renamed with \'Date and Time\' suffix.
+    \nRemember: The latest backup will have complete application data, so you can archive the old backup and remove it from your handset. So it will save memory.
+ ]]></string>
+
+    <string name="pref_main_screen_summary_8"><![CDATA[
+    Note: Restoring backup data will delete your existing data from application.\n
+    User can restore their data created through the app.\n
+    How: Simply put app \"Backup\" folder in the app folder\n
+    User can reach to [app folder] backup location from \nMain Screen Menu -> Go to Back-up folder.\n
+ ]]></string>
+
+    <string name="pref_add_item_screen">Add Item Screen</string>
+    <string name="pref_add_pulse_screen_summary_Title_1">Purpose of the Screen</string>
+    <string name="pref_add_pulse_screen_summary_Title_2">Different way to create root</string>
+    <string name="pref_add_pulse_screen_summary_Title_3">Auto-Save</string>
+    <string name="pref_add_pulse_screen_summary_1">
+        <![CDATA[
+      Add an Item and also its Root.
+ ]]>
+    </string>
+
+    <string name="pref_add_pulse_screen_summary_2"><![CDATA[
+      Create Root in one of the three ways: \n\n
+        i.  Choose from existing Root, Or\n\n
+        ii. Create new Root, Or\n\n
+        iii.  Choose from existing items and that Item will become a Root.
+ ]]></string>
+
+    <string name="pref_add_pulse_screen_summary_3">
+        <![CDATA[
+      Auto-Save is on by deafult.\n\n
+
+         To disable the auto-save feature go to first screen:\n\n
+          Menu ->  Settings -> Auto-Save
+ ]]>
+    </string>
+
+
+    <string name="pref_edit_pulse_screen">Edit Item and Root Screen</string>
+    <string name="pref_edit_pulse_screen_summary_title_1">
+    Purpose of the Screen
+    </string>
+
+    <string name="pref_edit_pulse_screen_summary_1">
+        <![CDATA[
+      Edit an Item and also its Root.
+ ]]>
+    </string>
+
+    <string name="pref_edit_pulse_screen_summary_title_2">
+    Delete
+    </string>
+
+
+    <string name="pref_edit_pulse_screen_summary_2">
+        <![CDATA[
+      Delete an item, but Root will not be deleted.
+ ]]>
+    </string>
+
+    <string name="pref_edit_allied_screen_summary_title_1">Purpose of the Screen</string>
+    <string name="pref_edit_allied_screen_summary_1"><![CDATA[
+      Edit Root. ]]>
+    </string>
+    <string name="pref_edit_root_screen">Edit Root Screen</string>
+    <string name="pref_edit_allied_screen_summary_title_2">Delete</string>
+    <string name="pref_edit_allied_screen_summary_2"><![CDATA[
+      Delete Root. ]]>
+    </string>
+
+    <string name="pref_add_root_screen">Add Root Screen</string>
+    <string name="pref_add_allied_screen_summary_title_1">Purpose of the Screen</string>
+    <string name="pref_add_allied_screen_summary_1"><![CDATA[
+      Create New Root. ]]>
+    </string>
+    <string name="pref_add_allied_screen_summary_title_2">New Root</string>
+    <string name="pref_add_allied_screen_summary_2"><![CDATA[
+      Please enter [All Optional]\n
+      Picture, Name , Description  ]]>
+    </string>
+
+    <string name="pref_allied_list_screen">Root List Screen</string>
+    <string name="pref_allied_list_screen_summary_title_1">Purpose of the Screen</string>
+    <string name="pref_allied_list_screen_summary_title_3">Yellow like Background</string>
+    <string name="pref_allied_list_screen_summary_title_4">Search</string>
+    <string name="pref_allied_list_screen_summary_title_5">Dependent</string>
+    <string name="pref_allied_list_screen_summary_title_6">Items Per Page</string>
+    <string name="pref_allied_list_screen_summary_title_7">Delete</string>
+
+
+    <string name="pref_allied_list_screen_summary_1"><![CDATA[
+      This screen show all the roots page wise.]]>
+    </string>
+
+    <string name="pref_allied_list_screen_summary_3">
+        <![CDATA[
+      Roots can be identified with Yellow like background color.
+ ]]>
+    </string>
+
+    <string name="pref_allied_list_screen_summary_4">
+        <![CDATA[
+      A Root can be Searched by its name or by its description.
+ ]]>
+    </string>
+     <string name="pref_allied_list_screen_summary_5"><![CDATA[
+      Dependent, will take you to the dependent screen which will show all the dependent items.
+ ]]></string>
+
+
+    <string name="pref_allied_list_screen_summary_6">
+        <![CDATA[
+      To increase the number of \'Roots\' per page. From first screen: \n\n
+      \'Menu\' -> \'Settings\' ->
+       click [ Choose Items Per Page (Main screen , Show Roots screen)]
+ ]]>
+    </string>
+
+    <string name="pref_allied_list_screen_summary_7"><![CDATA[
+      To delete any Root click on Yellow like background and then Delete. Or go to Edit Root -> Menu
+ ]]></string>
+
+
+    <string name="pref_dependent_screen">One Root with Dependents Screen</string>
+    <string name="pref_dependent_screen_summary_title_1">Purpose of the Screen</string>
+    <string name="pref_dependent_screen_summary_title_2">Add Dependent Items</string>
+    <string name="pref_dependent_screen_summary_title_3">Edit Dependent Items</string>
+    <string name="pref_dependent_screen_summary_title_4">Scroll Dependent Items</string>
+    <string name="pref_dependent_screen_summary_title_5">Delete Dependent Items</string>
+    <string name="pref_dependent_screen_summary_title_6">Items Per Page</string>
+
+
+
+    <string name="pref_dependent_screen_summary_1">Root is on upper-half of the screen, and \n its dependent lower-half of the screen</string>
+    <string name="pref_dependent_screen_summary_2">On this page go to Menu -> Add Dependent</string>
+    <string name="pref_dependent_screen_summary_3">Scroll down and click \'Edit\'</string>
+    <string name="pref_dependent_screen_summary_4">Move finger Left-to-Right to see all dependents</string>
+    <string name="pref_dependent_screen_summary_5">Scroll down and click \'Edit\' or \'Show Detail\', then click \'Delete\'</string>
+    <string name="pref_dependent_screen_summary_6"><![CDATA[
+      To increase the number of \'Dependent\' per page. From first screen: \n\n
+      \'Menu\' -> \'Settings\' ->
+       click [ Choose Items Per Page (One Root Many Dependent screen)]
+ ]]></string>
+
+
+    <string name="takeFromCamera">Take from Camera</string>
+    <string name="selectPicture">Select Picture</string>
+    <string name="selectOption">Select Option</string>
+    <string name="saveConfirmTitle">Save Confirm</string>
+    <string name="saveConfirmMessage"><![CDATA[ Save the Item?\n\n
+Note: Select auto-save from Menu -> Settings.]]></string>
+    <string name="saveConfirmMessageAllied"><![CDATA[ Save the Root?\n\n
+Note: Select auto-save from Menu -> Preferences.]]></string>
+    <string name="changesSaved">Changes Saved</string>
+    <string name="pref_about_name">About My Regular Memories</string>
+    <string name="search">Search</string>
+    <string name="restoreNotDone">Restore Not Done</string>
+    <string name="backupNotdone">Backup Not Done</string>
+
+
+    <string name="pleaseConfirmRestore"><![CDATA[ Please Confirm? \n\n
+
+    Note: Current data will be deleted.
+
+    ]]></string>
+
+    <string name="backupTempFolderErr"><![CDATA[ Problem creating \'Backup_Temp\' folder ]]></string>
+    <string name="finalizeTitle">Finalizing..</string>
+    <string name="startFinalizing">Start Finalizing</string>
+    <string name="itemsPerPage">Items Per Page</string>
+    <string name="dependentPerPage">Count of Dependents Per Page</string>
+
+
+</resources>

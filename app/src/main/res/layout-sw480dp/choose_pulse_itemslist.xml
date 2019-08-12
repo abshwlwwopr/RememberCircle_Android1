@@ -1,0 +1,181 @@
+<!--
+  Copyright 2013 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<!--
+    The ListView from sample_main.xml has a choiceMode set, meaning that when a user
+    selects a list item, the ListView will set the state for that item's root view
+    (this CheckableLinearLayout) to "checked". Note that this requires that the root view
+    implements the Checkable interface. Once the root view is checked, any children that
+    have the duplicateParentState attribute set will inherit this "checked" state.
+-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:background="@drawable/pulse_gradient_selecteor"
+
+    >
+
+    <!--
+        The duplicateParentState attribute on this TextView, along with the color state list
+        used in the textColor attribute causes its text color to change when its parent
+        is checked or unchecked.
+    -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:background="@drawable/list_item_background_selector">
+
+        <TextView
+            android:id="@+id/txt_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date_time_text"
+
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:maxLines="1"
+            android:visibility="visible"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            />
+
+
+        <View
+            android:id="@+id/dateLine"
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="#8bdfd8d8"
+            android:layout_below="@id/txt_date_time"
+            />
+
+        <TextView
+            android:id="@+id/pulseNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:hint="@string/pulseNameHint"
+            android:layout_margin="2dp"
+            android:layout_below="@+id/dateLine"/>
+
+        <TextView
+            android:id="@+id/pulse_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:hint="@string/pulse_desc_hint"
+            android:textStyle="normal"
+            android:layout_below="@+id/pulseNameTxt"
+            android:layout_margin="2dp"
+            />
+
+        <!--<TextView
+            android:id="@+id/etxt_pulse_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etxt_name"
+            android:hint="Pulse Description"
+            android:nextFocusDown="@+id/etxt_allied_desc"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/etxt_allied_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etxt_pulse_desc"
+            android:hint="Allied Description"
+            android:singleLine="true" />-->
+
+
+
+        <ImageView
+            android:id="@+id/pulseImg"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/pulse_desc"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="false"
+            android:background="@drawable/pulse_gradient_selecteor"
+            android:scaleType="fitXY"
+            />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="?android:attr/dividerVertical"
+                android:layout_below="@+id/pulseImg"
+                android:id="@+id/dependentLine"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/txt_view_pulse_dependent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/pulse_dependent_count_text"
+            android:textStyle="normal"
+            android:layout_below="@+id/dependentLine"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="3dp"
+            android:clickable="true"
+            />
+
+
+        <TextView
+            android:id="@+id/pulseContentId"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_below="@+id/pulseImg"
+            android:visibility="gone"
+            android:text="-1"
+            />
+
+
+        <TextView android:id="@android:id/text1"
+            android:duplicateParentState="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/hideable_text_color" />
+    </RelativeLayout>
+    <!--
+        The duplicateParentState attribute on this ImageView, along with the state list
+        drawable in the src attribute causes its image to change when its parent
+        is checked or unchecked.
+
+        To use the standard radio or checkmark image, set the src to
+        ?android:listChoiceIndicatorMultiple or ?android:listChoiceIndicatorSingle. These
+        are system theme attributes that reference a state list drawable.
+    -->
+    <!-- <ImageView android:src="@drawable/ic_hideable_item"
+         android:duplicateParentState="true"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/image_click_selector"
+         android:layout_marginLeft="16dp" />-->
+
+</RelativeLayout>

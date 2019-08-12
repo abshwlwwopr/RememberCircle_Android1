@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sample_main_layout">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/mainAppBarLayout">
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/alliedHeading"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            />
+</android.support.design.widget.AppBarLayout>
+
+    <ViewAnimator
+          android:id="@+id/sample_output"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_weight="1">
+
+        <ScrollView
+              style="@style/Widget.SampleMessageTile"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+            android:paddingTop="0dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/allied_gradient_selecteor"
+                android:id="@+id/layout_RootForSliding"
+                >
+
+            <TextView
+                android:id="@+id/etxt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/alliedNameLabel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:nextFocusDown="@+id/etxt_allied_desc"
+                android:maxLines="2"
+                />
+
+            <TextView
+                android:id="@+id/etxt_allied_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etxt_name"
+
+                android:hint="@string/alliedDescHint"
+                android:layout_margin="5dp"
+                 />
+
+            <ImageView
+                android:id="@+id/alliedImg"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:background="@drawable/image_click_selector"
+                android:layout_below="@+id/etxt_allied_desc"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/alliedContentId"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/alliedImg"
+                android:inputType="numberDecimal"
+                android:visibility="gone"
+                android:singleLine="true"
+                android:text="-1"
+                />
+
+            <TextView
+                android:id="@+id/alliedImageContentId"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/alliedContentId"
+                android:inputType="numberDecimal"
+                android:visibility="gone"
+                android:singleLine="true"
+                android:text="-1"
+                />
+
+
+
+
+            <!--<TextView
+                  style="@style/Widget.SampleMessage"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:paddingLeft="@dimen/horizontal_page_margin"
+                  android:paddingRight="@dimen/horizontal_page_margin"
+                  android:paddingTop="@dimen/vertical_page_margin"
+                  android:paddingBottom="@dimen/vertical_page_margin"
+                  android:text="@string/intro_message" />-->
+            </LinearLayout>
+        </ScrollView>
+
+        <!--<fragment
+              android:name="com.mrm.slidingTabs.common.logger.LogFragment"
+              android:id="@+id/log_fragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />-->
+
+    </ViewAnimator>
+
+    <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@android:color/darker_gray"
+        />
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/view_divider_color"
+        android:layout_margin="0dp"
+
+        android:paddingTop="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/pageNum"
+        android:text="Page : 1"
+        android:singleLine="true"
+        android:textStyle="italic"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_alignBaseline="@+id/btn_next_page"
+        />
+
+        <Button
+            android:id="@+id/btn_next_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_alignParentTop="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:textAlignment="viewEnd"
+            android:gravity="end"
+            android:textStyle="normal"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/pageNum"
+            android:text="@string/nextPage"
+            android:layout_alignParentRight="true"
+
+            />
+
+        <Button
+            android:id="@+id/btn_prev_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:background="?android:attr/selectableItemBackground"
+            android:textAlignment="viewStart"
+            android:gravity="start"
+            android:textStyle="normal"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@+id/pageNum"
+            android:layout_alignParentLeft="true"
+            android:text="@string/previousPage"
+            />
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/sample_content_fragment"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0px" />
+
+
+</LinearLayout>
+

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="0dp">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/mainAppBarLayout">
+
+
+        <RelativeLayout android:layout_marginTop="0dp"
+            android:paddingTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:id="@+id/topCreateBtns"
+            android:background="@color/alliedSubHeading"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+
+                android:background="?android:attr/dividerVertical"
+                android:layout_alignParentTop="true"/>
+            <View
+                android:id="@+id/ViewColorPickerHelper"
+                android:layout_width="1dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dip"
+                android:layout_marginTop="4dip"
+                android:background="?android:attr/dividerVertical"
+                android:layout_centerHorizontal="true"/>
+            <Button
+                android:id="@+id/button_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@id/ViewColorPickerHelper"
+                android:background="@color/alliedSubHeading"
+                android:text="@string/editRoot"
+                android:textAllCaps="false"
+                android:layout_alignParentBottom="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+            <Button
+                android:id="@+id/button_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/alliedSubHeading"
+                android:text="@string/deleteRoot"
+                android:textAllCaps="false"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/ViewColorPickerHelper"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="0dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/view_scrollbar"
+        android:layout_below="@+id/mainAppBarLayout">
+        <!--Contents Start-->
+        <RelativeLayout
+            android:id="@+id/allied_layout_item"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/topCreateBtns"
+            android:background="@drawable/allied_gradient_selecteor">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/alliedNameLabel"
+                android:textStyle="bold"
+                android:id="@+id/item_name_label"
+                android:layout_alignParentTop="true"
+                />
+
+            <TextView
+                android:id="@+id/etxt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:hint="@string/alliedNameHint"
+                android:nextFocusDown="@+id/etxt_pulse_desc"
+                android:editable="false"
+                android:enabled="true"
+                android:layout_below="@+id/item_name_label"
+                android:textStyle="normal"
+                android:layout_margin="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/alliedDescLabel"
+                android:textStyle="bold"
+                android:id="@+id/dependentCount"
+                android:layout_below="@+id/etxt_name"
+                android:paddingTop="20dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/alliedDescLabel"
+                android:textStyle="bold"
+                android:id="@+id/item_desc_label"
+                android:layout_below="@+id/dependentCount"
+                android:paddingTop="20dp"
+                android:layout_marginTop="20dp"
+                />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:paddingTop="0dp"
+                android:layout_marginTop="0dp" android:id="@+id/scrollItem"
+                android:layout_below="@+id/item_desc_label">
+                <TextView
+                    android:id="@+id/etxt_allied_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/item_desc_label"
+                    android:nextFocusDown="@+id/etxt_allied_desc"
+                    android:hint="@string/alliedDescHint"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:includeFontPadding="false"
+                    android:fastScrollEnabled="true"
+                    android:fastScrollAlwaysVisible="true"
+                    />
+            </ScrollView>
+            <ImageView
+                android:id="@+id/alliedImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/image_click_selector"
+                android:layout_below="@+id/scrollItem"
+                android:layout_marginBottom="10dp"
+                />
+        </RelativeLayout>
+
+    </ScrollView>
+    <TextView
+        android:id="@+id/alliedContentId"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/view_scrollbar"
+        android:inputType="numberDecimal"
+        android:visibility="gone"
+        android:singleLine="true"
+        android:text="-1"
+        />
+
+    <TextView
+        android:id="@+id/alliedImageContentId"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/alliedContentId"
+        android:inputType="numberDecimal"
+        android:visibility="gone"
+        android:singleLine="true"
+        android:text="-1"
+        />
+
+
+
+    <!--
+            <LinearLayout
+                android:id="@+id/layout_submit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <Button
+                    android:id="@+id/button_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/editPulse" />
+
+                <Button
+                    android:id="@+id/button_delete"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/deletePulse" />
+            </LinearLayout>-->
+
+</RelativeLayout>
+

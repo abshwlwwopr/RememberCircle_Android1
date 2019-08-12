@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="pressed_styled">#CC669900</color>
+    <color name="brownYellow">#fb3</color>
+    <color name="alliedHeading">#FFFFBB33</color>
+    <color name="alliedSubHeading">#FFFFAA00</color>
+    <color name="transparent">#00000000</color>
+    <color name="list_item_bg">#dff4f5a1</color>
+    <!--<color name="view_divider_color">#6d5b9f5a</color>-->
+    <color name="view_divider_color1">#6d5a9a9f</color> <!--Good 1-->
+
+
+    <color name="view_divider_color2">#bcef3d</color> <!--Good 2-->
+    <color name="view_divider_color3">#a6d237</color>
+    <color name="view_divider_color">#4ad4a4</color>
+    <color name="alliedImageBg">#e6d8b0</color>
+    <color name="pulseImageBg">#aed4e6</color>
+
+
+</resources>

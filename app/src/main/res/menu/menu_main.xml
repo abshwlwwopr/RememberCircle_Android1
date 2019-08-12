@@ -1,0 +1,65 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:appcompat="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mrm.MainActivity">
+
+    <item android:id="@+id/aboutMainScreen" android:title="@string/about_main_screen"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/aboutBR" android:title="Backup n Restore"
+        android:orderInCategory="100" app:showAsAction="never" >
+
+    <menu>
+        <item android:id="@+id/backupDB" android:title="@string/backupMyData"
+            android:orderInCategory="100" app:showAsAction="never"
+            android:icon="@drawable/backup"/>
+
+        <item android:id="@+id/openBackupFolder" android:title="@string/goToBackupFolder"
+            android:orderInCategory="100" app:showAsAction="never"
+            android:icon="@drawable/ic_folder_open_black_24dp"/>
+
+        <item android:id="@+id/restore" android:title="@string/restoreMyData"
+            android:orderInCategory="100" app:showAsAction="never" />
+
+        <item android:id="@+id/myPreferences" android:title="@string/settings"
+            android:orderInCategory="100" app:showAsAction="never"
+            android:icon="@drawable/ic_restore_black_24dp"/>
+    </menu>
+    </item>
+    <item
+        android:id="@+id/action_add_pulse"
+        android:icon="@android:drawable/ic_menu_add"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom|never"
+        android:title="@string/add_pulse"/>
+
+    <item android:id="@+id/menu_search"
+        android:title="Search"
+        android:icon="@drawable/ic_hideable_item_checked"
+        app:showAsAction="always"
+        appcompat:actionViewClass="com.mrm.editPulse.SearchViewExtend"
+        />
+
+
+
+    <!--<group android:checkableBehavior="single" android:orderInCategory="200">
+         <item android:id="@+id/item1" android:titleCondensed="Options"
+             android:title="Get images from backup"
+             android:icon="@android:drawable/ic_menu_preferences">
+         </item>
+         <item android:id="@+id/getImagesFromBackup" android:titleCondensed="Persist"
+             android:title="Get Image from backup"
+             android:icon="@android:drawable/ic_menu_preferences"
+             android:checkable="true" >
+         </item>
+    </group>
+ -->
+
+    <!--<item android:id="@+id/ignorePreviousImageBackup" android:titleCondensed="Persist"
+        android:title="Ignore previous image backup"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:checkable="true" >
+    </item>-->
+
+</menu>

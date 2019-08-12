@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:appcompat="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mrm.allied.AlliedListActivity">
+
+
+    <!--<item android:id="@+id/withInAlliedList" android:title="All Allied SLiding "
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/allAlliedList" android:title="All Allied "
+        android:orderInCategory="100" app:showAsAction="never" />-->
+
+    <item android:id="@+id/aboutAlliedListScreen"
+        android:title="@string/about_main_screen"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item
+        android:id="@+id/action_add_allied"
+        android:icon="@android:drawable/ic_menu_add"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/add_allied"/>
+
+    <item android:id="@+id/menu_search"
+        android:title="@string/search"
+        android:icon="@drawable/ic_hideable_item_checked"
+        app:showAsAction="always"
+        appcompat:actionViewClass="com.mrm.editPulse.SearchViewExtend"
+        />
+
+
+</menu>

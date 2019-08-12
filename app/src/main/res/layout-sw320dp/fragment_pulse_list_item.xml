@@ -1,0 +1,427 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item_head"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="0dp"
+    android:layout_margin="0dp"
+    >
+    <!--To add the divider -->
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        android:id="@+id/text_view_as_divider"
+        />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="10dp"
+    android:background="@drawable/list_item_background_selector"
+    android:layout_below="@+id/text_view_as_divider"
+    >
+
+    <TextView
+        android:id="@+id/txt_emp_dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:maxLines="1"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        />
+
+    <Button
+        android:id="@+id/btn_edit_pulse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/txt_emp_dob"
+        android:textSize="17sp"
+        android:background="?android:attr/selectableItemBackground"
+        android:textAlignment="center"
+        android:textStyle="normal"
+        android:layout_marginBottom="5dp"
+        android:drawableRight="@drawable/ic_mode_edit_black_24dp"
+        />
+
+    <View
+        android:id="@+id/dateLine"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="@color/view_divider_color"
+        android:layout_below="@id/txt_emp_dob"
+        />
+
+    <!--Sample Start-->
+    <RelativeLayout
+        android:id="@+id/contentCombinedLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:layout_below="@+id/dateLine"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="?android:attr/dividerVertical"
+            android:layout_alignParentTop="true"/>
+        <View
+            android:id="@+id/dividerHorizontalA2"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:background="?android:attr/dividerVertical"
+            android:layout_centerHorizontal="true"/>
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="?android:attr/dividerVertical"
+            android:layout_alignParentBottom="true"/>-->
+
+        <!--Name-->
+        <!--Name LHS-->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:hint="@string/pulse_name_hint"
+            android:id="@+id/txt_emp_name"
+            android:textStyle="bold"
+
+            android:maxLines="3"
+            android:fastScrollEnabled="true"
+            android:fastScrollAlwaysVisible="true"
+
+            android:textAlignment="center"
+            android:layout_toLeftOf="@id/dividerHorizontalA2"
+            android:background="#FFC0C5E6"
+            />
+
+        <!--Name RHS-->
+
+        <TextView
+            android:id="@+id/txt_allied_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:hint="@string/associate_name_hint"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:ellipsize="middle"
+            android:textAlignment="center"
+            android:maxLines="3"
+            android:scrollHorizontally="false"
+            android:layout_toRightOf="@id/dividerHorizontalA2"
+            android:background="#FFF7DBA3"
+            />
+
+        <!--Desc-->
+        <!--Desc LHS-->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/txt_pulse_desc"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@id/dividerHorizontalA2"
+            android:layout_below="@+id/txt_emp_name"
+            android:background="@drawable/pulse_gradient_selecteor"
+            android:paddingBottom="70dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            />
+
+
+        <!--Desc RHS-->
+        <TextView
+            android:id="@+id/txt_allied_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_below="@+id/txt_allied_name"
+            android:layout_toRightOf="@id/dividerHorizontalA2"
+            android:background="@drawable/allied_gradient_selecteor"
+            android:paddingBottom="70dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            />
+
+
+        <!--Item image LHS-->
+
+        <android.support.v7.widget.ContentFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/pulseImageFrame"
+            android:layout_alignBaseline="@+id/alliedImageFrame"
+            android:layout_alignBottom="@+id/alliedImageFrame"
+            android:layout_alignTop="@+id/alliedImageFrame"
+            android:layout_toLeftOf="@id/dividerHorizontalA2"
+                android:background="@color/pulseImageBg"
+            >
+            <ImageButton
+                android:id="@+id/pulseImageAtList"
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:clickable="true"
+                android:layout_below="@+id/txt_pulse_desc"
+                android:background="@drawable/image_click_selector"
+                android:scaleType="fitXY"
+                />
+
+                <!--<ImageView
+                android:id="@+id/changePulseImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:adjustViewBounds="true"
+                android:paddingTop="-10dp"
+                android:scaleType="fitStart"
+                    android:src="@drawable/ic_hideable_item_checked" />-->
+        </android.support.v7.widget.ContentFrameLayout>
+        <!--Item image RHS-->
+
+        <android.support.v7.widget.ContentFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/alliedImageFrame"
+            android:layout_below="@+id/txt_allied_desc"
+            android:layout_toRightOf="@id/dividerHorizontalA2"
+                android:background="@color/alliedImageBg"
+            >
+            <ImageButton
+                android:id="@+id/alliedImageAtList"
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:contentDescription="TODO"
+                android:clickable="true"
+                android:padding="0dp"
+                android:background="@drawable/image_click_selector"
+                android:scaleType="fitXY"
+                />
+            <!--<ImageView
+                android:id="@+id/changeAlliedImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:adjustViewBounds="true"
+                android:paddingTop="-10dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_hideable_item_checked" />-->
+        </android.support.v7.widget.ContentFrameLayout>
+
+
+        <!-- Dependent Icons LHS-->
+        <RelativeLayout
+            android:id="@+id/pulse_layout_work_icons"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+
+
+            android:layout_below="@+id/pulseImageFrame"
+            android:layout_toLeftOf="@id/dividerHorizontalA2"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_alignBaseline="@+id/allied_layout_work_icons"
+            android:layout_alignBottom="@+id/allied_layout_work_icons"
+            android:layout_alignTop="@+id/allied_layout_work_icons"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+
+            >
+
+            <!--  <Button
+                  android:id="@+id/btn_view_pulse_detail"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentLeft="true"
+                  android:layout_alignParentTop="true"
+                  android:layout_toLeftOf="@id/ViewColorPickerHelper"
+                  android:text="View"
+                  android:drawableLeft="@drawable/ic_hideable_item_checked"
+                  android:layout_alignParentBottom="true"/>
+
+              <Button
+                  android:id="@+id/btn_view_pulse_dependent"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentRight="true"
+                  android:layout_alignParentTop="true"
+                  android:text="Dependent(3)"
+                  android:layout_alignParentBottom="true"
+                  />-->
+            <View
+                android:layout_width="match_parent"
+
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_height=".5dp"
+                android:background="#8bdfd8d8"
+                android:layout_alignParentTop="true"/>
+            <!--<View
+                android:id="@+id/dividerHorizontalP2"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:background="?android:attr/dividerVertical"
+                android:layout_centerHorizontal="false"/>-->
+           <!-- <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="?android:attr/dividerVertical"
+                android:layout_alignParentBottom="true"/>-->
+            <!--<Button
+                android:id="@+id/btn_view_pulse_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@id/dividerHorizontalP"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="View"
+                android:drawableLeft="@drawable/ic_hideable_item_checked"
+                android:layout_alignParentBottom="true"/>-->
+            <Button
+                android:id="@+id/btn_view_pulse_dependent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/pulse_dependent_count_text"
+                android:textAllCaps="false"
+                android:layout_alignParentBottom="true"
+
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        </RelativeLayout>
+
+        <!-- Dependent Icons RHS-->
+
+        <RelativeLayout
+            android:id="@+id/allied_layout_work_icons"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_below="@+id/alliedImageFrame"
+            android:layout_toRightOf="@id/dividerHorizontalA2"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_height=".5dp"
+                android:background="#8bdfd8d8"
+                android:layout_alignParentTop="true"/>
+            <!--<View
+                android:id="@+id/dividerHorizontalA3"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:background="?android:attr/dividerVertical"
+                android:layout_centerHorizontal="true"/>-->
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="?android:attr/dividerVertical"
+                android:layout_alignParentBottom="true"/>-->
+            <!--<Button
+                android:id="@+id/btn_view_allied_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@id/dividerHorizontalA3"
+                android:background="?android:attr/selectableItemBackground"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="View"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/ic_hideable_item_checked"
+                android:layout_alignParentBottom="true"/>-->
+            <Button
+                android:id="@+id/btn_view_allied_dependent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/associate_dependent_count_text"
+                android:textAllCaps="false"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+    <!--Sample End-->
+
+
+
+    <!--<View
+        android:id="@+id/useful_line_divider"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="#80000000"
+        android:layout_below="@id/contentCombinedLayout2"
+        />-->
+    <!--
+        <Button
+            android:id="@+id/txt_pulse_useful_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Useful Count: 0"
+            android:maxLines="1"
+            android:visibility="visible"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/useful_line_divider"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            />-->
+
+    <TextView
+        android:id="@+id/txt_emp_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone" />
+
+
+
+
+</RelativeLayout>
+    </RelativeLayout>

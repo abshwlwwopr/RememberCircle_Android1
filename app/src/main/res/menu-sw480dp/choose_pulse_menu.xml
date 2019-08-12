@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:appcompat="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="com.mrm.ChooseAllied.ChooseAlliedFromList">
+
+    <item android:id="@+id/menu_search"
+        android:title="Search"
+        android:icon="@drawable/ic_hideable_item_checked"
+        app:showAsAction="always"
+        appcompat:actionViewClass="com.mrm.editPulse.SearchViewExtend"
+        />
+
+
+</menu>

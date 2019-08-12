@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="0dp"
+
+    >
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/mainAppBarLayout">
+
+    <RelativeLayout android:layout_marginTop="0dp"
+        android:paddingTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/topEditBtns"
+        android:background="@color/alliedSubHeading"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+
+            android:background="?android:attr/dividerVertical"
+            android:layout_alignParentTop="true"/>
+        <View
+            android:id="@+id/ViewColorPickerHelper"
+            android:layout_width="1dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:background="?android:attr/dividerVertical"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/button_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/ViewColorPickerHelper"
+            android:background="@color/alliedSubHeading"
+            android:text="@string/editRootDone"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/alliedSubHeading"
+            android:text="@string/rootEditReset"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/ViewColorPickerHelper"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+    </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mainAppBarLayout"
+        android:id="@+id/scroll1"
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="0dp"
+            android:orientation="vertical"
+            android:id="@+id/rootForOrientation"
+            >
+            <RelativeLayout
+                android:id="@+id/allied_layout_item"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/allied_gradient_selecteor">
+                <!--Associate name label-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/alliedNameLabel"
+                    android:textStyle="normal"
+                    android:id="@+id/allied_name_label"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/etxt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/alliedNameHint"
+                    android:nextFocusDown="@+id/etxt_pulse_desc"
+                    android:maxLines="3"
+                    android:layout_below="@+id/allied_name_label"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+                <!--Associate Description label-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textStyle="normal"
+                    android:text="@string/alliedDescLabel"
+                    android:id="@+id/desc_label"
+                    android:layout_below="@+id/etxt_name"
+                    android:layout_marginTop="15dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/etxt_allied_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/desc_label"
+                    android:hint="@string/alliedDescHint"
+                    android:nextFocusDown="@+id/btnEditPulseImage"
+                    android:maxLines="10"
+                    android:layout_marginTop="2dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    />
+                <!--
+
+                        <EditText
+                            android:id="@+id/etxt_pulse_desc1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/desc_label"
+                            android:hint="Description of item. This is item description."
+                            android:nextFocusDown="@+id/btnEditPulseImage"
+                            android:singleLine="false"
+                            android:lines="10"
+                            android:maxLines="10"
+                            android:layout_marginTop="2dp"
+                            android:scrollbarAlwaysDrawVerticalTrack="true"
+                            android:scrollbars="vertical"
+                            android:fadeScrollbars="false"
+                            android:layout_centerInParent="true"
+                            android:autoText="false"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:linksClickable="true"
+                            android:scrollIndicators="left"
+                            android:includeFontPadding="false"
+                            android:scrollbarSize="32dp"
+                            android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"
+                            android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+                            android:imeOptions="flagForceAscii"
+                            android:inputType="textMultiLine|textEmailAddress"
+                            android:textAlignment="viewStart"
+                            />
+                -->
+
+
+
+                <!--<EditText
+                    android:id="@+id/etxt_dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etxt_allied_desc"
+                    android:hint="@string/pulseCreatedLabel"
+                    android:nextFocusDown="@+id/etxt_salary"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/etxt_salary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etxt_dob"
+                    android:hint="@string/salary"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true" />-->
+
+                <!--Item Image-->
+                <ImageView
+                    android:id="@+id/alliedImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/allied_gradient_selecteor"
+                    android:layout_below="@+id/etxt_allied_desc"
+                    android:layout_margin="2dp"
+                    />
+
+                <Button
+                    android:id="@+id/btnEditAlliedImage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:text="@string/editAssociateImage"
+                    android:layout_below="@+id/alliedImg"
+                    android:layout_marginTop="20dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textAllCaps="false"
+                    />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/alliedImageContentId"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/allied_layout_item"
+                android:inputType="numberDecimal"
+                android:visibility="gone"
+                android:singleLine="true"
+                android:text="-1"
+                />
+
+            <EditText
+                android:id="@+id/alliedEditedImageContentId"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/alliedImageContentId"
+                android:inputType="numberDecimal"
+                android:visibility="gone"
+                android:singleLine="true"
+                android:text="-1"
+                />
+
+            <EditText
+                android:id="@+id/alliedContentId"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/pulseContentId"
+                android:inputType="numberDecimal"
+                android:visibility="gone"
+                android:singleLine="true"
+                android:text="-1"
+                />
+
+            <EditText
+                android:id="@+id/alliedEditedImageURI"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/alliedContentId"
+
+                android:visibility="gone"
+                android:singleLine="true"
+                android:text="-1"
+                />
+            <EditText
+                android:id="@+id/originalPulseId"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/alliedEditedImageURI"
+
+                android:visibility="gone"
+                android:singleLine="true"
+                android:text="-1"
+                />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

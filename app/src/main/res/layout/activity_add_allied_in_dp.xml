@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="0dp"
+    android:id="@+id/rootForOrientation"
+    >
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/mainAppBarLayout">
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/alliedHeading"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            />
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout android:layout_marginTop="0dp"
+        android:paddingTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/topAddBtns"
+        android:layout_below="@+id/mainAppBarLayout"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+
+            android:background="?android:attr/dividerVertical"
+            android:layout_alignParentTop="true"/>
+        <View
+            android:id="@+id/ViewColorPickerHelper"
+            android:layout_width="1dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:background="?android:attr/dividerVertical"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/ViewColorPickerHelper"
+            android:background="@color/alliedSubHeading"
+            android:text="Add Now"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"/>
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/alliedSubHeading"
+            android:text="Reset"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/ViewColorPickerHelper"
+            />
+
+    </RelativeLayout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topAddBtns"
+        android:id="@+id/scroll1">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="0dp"
+            android:orientation="vertical"
+            android:id="@+id/addPulseScrollView"
+            tools:context="com.mrm.allied.addAllied.AddAlliedActivity">
+
+            <RelativeLayout
+                android:id="@+id/allied_layout_item"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/allied_gradient_selecteor">
+
+                <!--Item name-->
+                <TextView
+                    android:id="@+id/allied_name_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/alliedNameLabel"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBaseline="@+id/etxt_name" />
+
+                <EditText
+                    android:id="@+id/etxt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/alliedNameLabel"
+                    android:nextFocusDown="@+id/etxt_pulse_desc"
+                    android:singleLine="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/allied_name_label"/>
+
+                <!--Item Description-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textStyle="bold"
+                    android:text="Associate Description: "
+                    android:id="@+id/desc_label"
+                    android:layout_below="@+id/etxt_name"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <EditText
+                    android:id="@+id/etxt_allied_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/desc_label"
+                    android:hint="Associate Description"
+                    android:nextFocusDown="@+id/btnAddPulseImage"
+                    android:maxLines="10"
+                    android:layout_marginTop="2dp"
+                    android:textAlignment="textStart"/>
+
+
+                <!-- <EditText
+                     android:id="@+id/etxt_dob"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@+id/etxt_allied_desc"
+                     android:hint="@string/pulseCreatedLabel"
+                     android:nextFocusDown="@+id/etxt_salary"
+                     android:singleLine="true" />-->
+
+                <!--    <EditText
+                        android:id="@+id/etxt_salary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etxt_allied_desc"
+                        android:hint="@string/salary"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true" />-->
+
+
+                <!--Item Image-->
+                <Button
+                    android:id="@+id/btnAddAlliedImage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:text="Add Associate Image"
+                    android:layout_below="@+id/etxt_allied_desc"
+                    />
+
+                <ImageView
+                    android:id="@+id/alliedImg"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_below="@+id/btnAddAlliedImage"
+                    android:background="@drawable/allied_gradient_selecteor"
+                    android:layout_margin="20dp"
+                    />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/alliedImageContentId"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/allied_layout_item"
+                android:inputType="numberDecimal"
+                android:visibility="gone"
+                android:singleLine="true"
+                android:text="-1"
+                />
+            <EditText
+                android:id="@+id/alliedId"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/alliedImageContentId"
+
+                android:inputType="numberDecimal"
+                android:visibility="gone"
+                android:singleLine="true"
+                android:text="-1"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

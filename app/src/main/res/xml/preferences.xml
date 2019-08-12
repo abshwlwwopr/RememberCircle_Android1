@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_general_profile" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="autoSave"
+            android:title="@string/pref_autoSave_name"
+            android:summary="@string/pref_autoSave_summary"
+            android:icon="@drawable/ic_save_black_48dp">
+        </CheckBoxPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/itemsPerPageMainScreen" >
+        <ListPreference
+            android:key="itemsInPageMainScreen"
+            android:entries="@array/itemsInPageMainScreen"
+            android:summary="@string/itemsPerPageSummary"
+            android:entryValues="@array/itemsInPageMainScreenValues"
+            android:title="@string/itemsPerPage"
+            android:defaultValue="5"
+            android:icon="@drawable/items_per_page"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/itemsPerPageDependentScreen" >
+        <ListPreference
+            android:key="itemsInPageDependentScreen"
+            android:entries="@array/itemsInPageDependentScreen"
+            android:summary="@string/itemsPerPageDependentScreenSummary"
+            android:entryValues="@array/itemsInPageDependentScreenValues"
+            android:title="@string/dependentPerPage"
+            android:defaultValue="10"
+            android:icon="@drawable/items_per_page"/>
+    </PreferenceCategory>
+
+
+    <!--<PreferenceCategory android:title="@string/backupNRestore" >
+        <Preference
+            android:key="backup"
+            android:title="@string/title_backup_preference"
+            android:summary="@string/summary_backup_preference">
+        </Preference>
+        <Preference
+            android:key="restore"
+            android:title="@string/title_restore_preference"
+            android:summary="@string/summary_restore_preference">
+
+        </Preference>
+    </PreferenceCategory>-->
+
+    <!--<PreferenceCategory android:title="@string/pref_about_profile">
+        <Preference
+            android:title="@string/pref_about_name"
+            android:summary="@string/pref_about_summary"
+            android:key="aboutApp"/>
+    </PreferenceCategory>-->
+</PreferenceScreen>

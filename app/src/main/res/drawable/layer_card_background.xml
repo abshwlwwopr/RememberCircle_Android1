@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle"
+            android:dither="true">
+
+            <corners android:radius="3dp"/>
+
+            <solid android:color="#b9b7b8" /> <!-- Cards border color-->
+            <gradient
+                android:startColor="#CAB1B0B0" android:endColor="#ca8e8989"
+                android:angle="90"/>
+        </shape>
+    </item>
+
+    <item android:left="1dp"
+        android:right="1dp"
+        android:top=".8dp"
+        android:bottom="1dp">
+        <shape android:shape="rectangle"
+            android:dither="true">
+
+            <corners android:radius="3dp" />
+
+            <solid android:color="@android:color/white" /> <!-- BG color within cards -->
+
+
+            <padding android:bottom="0dp"
+                android:left="0dp"
+                android:right="0dp"
+                android:top="0dp" />
+        </shape>
+    </item>
+
+</layer-list>

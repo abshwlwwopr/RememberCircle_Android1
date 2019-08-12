@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_main_screen"
+        android:icon="@drawable/ic_info_outline_black_24dp">
+        <Preference
+            android:title="@string/pref_main_screen_summary_Title_1"
+            android:summary="@string/pref_main_screen_summary_1"
+            android:key="aboutApp1"
+            android:icon="@drawable/pics_side_by_side"
+            />
+
+        <Preference
+            android:title="@string/pref_main_screen_summary_Title_2"
+            android:summary="@string/pref_main_screen_summary_2"
+            android:key="aboutApp8"/>
+
+        <Preference
+            android:title="@string/pref_main_screen_summary_Title_3"
+            android:summary="@string/pref_main_screen_summary_3"
+            android:key="aboutApp2"
+            android:icon="@drawable/ic_search_black_36dp"
+            />
+
+        <Preference
+            android:title="@string/pref_main_screen_summary_Title_4"
+            android:summary="@string/pref_main_screen_summary_4"
+            android:key="aboutApp3"
+            android:icon="@drawable/dependent"/>
+
+        <Preference
+            android:title="@string/pref_main_screen_summary_Title_5"
+            android:summary="@string/pref_main_screen_summary_5"
+            android:key="aboutApp4"
+            android:icon="@drawable/items_per_page"/>
+
+        <Preference
+            android:title="@string/pref_main_screen_summary_Title_6"
+            android:summary="@string/pref_main_screen_summary_6"
+            android:key="aboutApp5"
+            android:icon="@drawable/ic_delete_black_24dp"/>
+
+        <Preference
+            android:title="@string/pref_main_screen_summary_Title_7"
+            android:summary="@string/pref_main_screen_summary_7"
+            android:key="aboutApp6"
+            android:icon="@drawable/backup"/>
+
+        <Preference
+            android:title="@string/pref_main_screen_summary_Title_8"
+            android:summary="@string/pref_main_screen_summary_8"
+            android:key="aboutApp7"
+            android:icon="@drawable/ic_restore_black_36dp"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

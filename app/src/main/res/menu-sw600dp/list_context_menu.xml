@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="com.mrm.MainActivity">
+
+    <item android:id="@+id/menu_edit"
+        android:title="@string/menuEdit"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:icon="@android:drawable/ic_menu_edit"
+        />
+
+    <item android:id="@+id/menu_delete" android:title="@string/menuDelete"
+        android:orderInCategory="100" app:showAsAction="never"
+        android:icon="@android:drawable/ic_menu_delete"/>
+
+    <item
+        android:id="@+id/closeContextMenu"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="@string/menuClose"/>
+
+</menu>

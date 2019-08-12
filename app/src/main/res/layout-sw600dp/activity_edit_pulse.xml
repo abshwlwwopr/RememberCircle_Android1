@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="0dp">
+    <RelativeLayout android:layout_marginTop="0dp"
+        android:paddingTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/topEditBtns"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="?android:attr/dividerVertical"
+            android:layout_alignParentTop="true"/>
+        <View
+            android:id="@+id/ViewColorPickerHelper"
+            android:layout_width="1dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:background="?android:attr/dividerVertical"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/button_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/ViewColorPickerHelper"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@color/colorPrimary"
+            android:text="@string/pulseEditDone"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"/>
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:text="@string/pulseEditReset"
+            android:layout_alignParentBottom="true"
+            android:textAllCaps="false"
+            android:layout_toRightOf="@id/ViewColorPickerHelper"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+    </RelativeLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/topEditBtns"
+    android:id="@+id/scroll1"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="0dp"
+        android:orientation="vertical"
+        android:id="@+id/rootForOrientation"
+        >
+    <RelativeLayout
+        android:id="@+id/pulse_layout_item"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/pulse_gradient_selecteor">
+        <!--Item name Label-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/pulseNameLabel"
+            android:textStyle="bold"
+            android:id="@+id/pulse_name_label"
+            android:layout_alignParentTop="true"
+            />
+
+        <EditText
+            android:id="@+id/etxt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pulseNameHint"
+            android:nextFocusDown="@+id/etxt_pulse_desc"
+            android:layout_below="@+id/pulse_name_label"
+            android:maxLines="3"
+            />
+
+        <!--Item Description Label-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:text="@string/pulseDescLabel"
+            android:id="@+id/desc_label"
+            android:layout_below="@+id/etxt_name"
+            android:layout_marginTop="15dp"
+             />
+
+        <EditText
+            android:id="@+id/etxt_pulse_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/desc_label"
+            android:hint="@string/pulseDescHint"
+            android:nextFocusDown="@+id/btnEditPulseImage"
+            android:maxLines="10"
+            android:layout_marginTop="2dp"
+            />
+<!--
+
+        <EditText
+            android:id="@+id/etxt_pulse_desc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/desc_label"
+            android:hint="Description of item. This is item description."
+            android:nextFocusDown="@+id/btnEditPulseImage"
+            android:singleLine="false"
+            android:lines="10"
+            android:maxLines="10"
+            android:layout_marginTop="2dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"
+            android:layout_centerInParent="true"
+            android:autoText="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:linksClickable="true"
+            android:scrollIndicators="left"
+            android:includeFontPadding="false"
+            android:scrollbarSize="32dp"
+            android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"
+            android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+            android:imeOptions="flagForceAscii"
+            android:inputType="textMultiLine|textEmailAddress"
+            android:textAlignment="viewStart"
+            />
+-->
+
+
+
+        <!--<EditText
+            android:id="@+id/etxt_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etxt_allied_desc"
+            android:hint="@string/pulseCreatedLabel"
+            android:nextFocusDown="@+id/etxt_salary"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/etxt_salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etxt_dob"
+            android:hint="@string/salary"
+            android:inputType="numberDecimal"
+            android:singleLine="true" />-->
+
+        <!--Item Image-->
+        <ImageView
+            android:id="@+id/pulseImg"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:background="@drawable/pulse_gradient_selecteor"
+            android:layout_below="@+id/etxt_pulse_desc"
+            android:layout_margin="20dp"
+            />
+
+        <Button
+            android:id="@+id/btnEditPulseImage"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:text="@string/editPulseImage"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@+id/pulseImg"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            />
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/allied_layout_item"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/pulse_layout_item"
+        android:background="@drawable/allied_gradient_selecteor">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/add_associate_note"
+            android:textStyle="bold"
+            android:id="@+id/allied_note_label"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:id="@+id/button_chooseAllied"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/choseAllied"
+            android:layout_below="@+id/allied_note_label"
+            android:layout_alignParentLeft="true"
+            android:textAllCaps="false"
+            android:layout_alignBaseline="@+id/button_makePulseAnAllied"/>
+
+        <Button
+            android:id="@+id/button_makePulseAnAllied"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/chosePulseAsAllied"
+            android:layout_below="@+id/allied_note_label"
+            android:layout_alignParentRight="true"
+
+            android:textAllCaps="false"
+            android:layout_toRightOf="@+id/button_chooseAllied"/>
+
+
+
+        <!--Allied Name-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/alliedNameLabel"
+            android:textStyle="bold"
+            android:id="@+id/allied_name_label"
+            android:layout_below="@+id/button_chooseAllied"
+            android:paddingTop="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/etxt_allied_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/alliedNameHint"
+            android:maxLines="3"
+            android:layout_below="@+id/allied_name_label"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:paddingBottom="15dp"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:text="@string/pulse_dependent_count_text_exist"
+            android:id="@+id/allied_dependent_count"
+            android:layout_below="@+id/etxt_allied_name"
+            android:paddingBottom="15dp"
+            android:layout_marginBottom="15dp"/>
+
+        <!--Allied Description-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:text="@string/alliedDescLabel"
+            android:id="@+id/allied_desc_label"
+            android:layout_below="@+id/allied_dependent_count"
+            />
+
+        <EditText
+            android:id="@+id/etxt_allied_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/allied_desc_label"
+            android:hint="@string/alliedDescHint"
+            android:maxLines="10"
+            android:layout_marginTop="3dp"
+            android:paddingTop="3dp"
+            />
+
+        <!--Allied Image-->
+        <Button
+            android:id="@+id/btnEditAlliedImage"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:text="@string/editAssociateImage"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAllCaps="false"
+            android:layout_below="@+id/etxt_allied_desc" />
+
+        <ImageView
+            android:id="@+id/alliedImg"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:background="@drawable/allied_gradient_selecteor"
+            android:layout_below="@+id/btnEditAlliedImage"
+             />
+
+       <!-- <Button
+            android:id="@+id/button_chooseAllied"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+
+            android:text="@string/choseAllied"
+            android:layout_below="@+id/alliedImg"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/button_makePulseAnAllied"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+
+            android:text="@string/chosePulseAsAllied"
+            android:layout_below="@+id/button_chooseAllied"
+            android:textAllCaps="false"
+            />-->
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/alliedImageContentId"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/allied_layout_item"
+            android:inputType="numberDecimal"
+            android:visibility="gone"
+            android:singleLine="true"
+            android:text="-1"
+            />
+
+        <EditText
+            android:id="@+id/alliedEditedImageContentId"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/alliedImageContentId"
+            android:inputType="numberDecimal"
+            android:visibility="gone"
+            android:singleLine="true"
+            android:text="-1"
+            />
+        <EditText
+            android:id="@+id/pulseImageContentId"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/alliedEditedImageContentId"
+            android:inputType="numberDecimal"
+            android:visibility="gone"
+            android:singleLine="true"
+            android:text="-1"
+            />
+
+        <EditText
+            android:id="@+id/pulseEditedImageContentId"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/pulseImageContentId"
+            android:inputType="numberDecimal"
+            android:visibility="gone"
+            android:singleLine="true"
+            android:text="-1"
+            />
+
+        <EditText
+            android:id="@+id/pulseContentId"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/pulseEditedImageContentId"
+            android:inputType="numberDecimal"
+            android:visibility="gone"
+            android:singleLine="true"
+            android:text="-1"
+            />
+
+        <EditText
+            android:id="@+id/alliedContentId"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/pulseContentId"
+            android:inputType="numberDecimal"
+            android:visibility="gone"
+            android:singleLine="true"
+            android:text="-1"
+            />
+        <EditText
+            android:id="@+id/alliedOriginalContentId"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/alliedContentId"
+            android:inputType="numberDecimal"
+            android:visibility="gone"
+            android:singleLine="true"
+            android:text="-1"
+            />
+        <EditText
+            android:id="@+id/makePulseAnAlliedEtxt"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/alliedOriginalContentId"
+
+            android:inputType="numberDecimal"
+            android:visibility="invisible"
+            android:singleLine="true"
+            android:text="-1"
+            />
+
+        <EditText
+            android:id="@+id/roleAsAlliedId"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/makePulseAnAlliedEtxt"
+
+            android:inputType="numberDecimal"
+            android:visibility="gone"
+            android:singleLine="true"
+            android:text="-1"
+            />
+
+        <EditText
+            android:id="@+id/originalPulseId"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/roleAsAlliedId"
+
+            android:inputType="numberDecimal"
+            android:visibility="gone"
+            android:singleLine="true"
+            android:text="-1"
+            />
+
+        <EditText
+            android:id="@+id/pulseEditedImageURIEtxt"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/originalPulseId"
+            android:visibility="gone"
+            android:singleLine="true"
+            android:text="-1"
+            />
+
+        <EditText
+            android:id="@+id/findButtonFlagETxt"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/pulseEditedImageURIEtxt"
+            android:visibility="gone"
+            android:singleLine="true"
+            android:text="-1"
+            />
+        <!--<LinearLayout
+            android:id="@+id/layout_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button_makePulseAnAllied">
+
+            <Button
+                android:id="@+id/button_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/edit" />
+
+            <Button
+                android:id="@+id/button_reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/reset" />
+        </LinearLayout>-->
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+    </RelativeLayout>
